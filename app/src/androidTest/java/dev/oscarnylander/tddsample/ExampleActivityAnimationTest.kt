@@ -40,7 +40,7 @@ class ExampleActivityAnimationTest : KoinTest {
 
             onScreen<ExampleScreen> {
                 button { click() }
-                await atMost ONE_SECOND untilAsserted  {
+                await atMost ONE_SECOND untilAsserted {
                     viewShownAfterAnimation {
                         isVisible()
                     }
